@@ -1,0 +1,29 @@
+{
+  "name": "love-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "local": "node_modules/.bin/nodemon -r dotenv/config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onekyat/love-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onekyat/love-api/issues"
+  },
+  "homepage": "https://github.com/onekyat/love-api#readme",
+  "dependencies": {
+    "kafka-node": "^2.6.1",
+    "mongodb": "^3.1.0-beta4",
+    "restify": "^7.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^5.0.1",
+    "nodemon": "^1.17.5"
+  }
+}
