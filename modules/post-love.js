@@ -18,7 +18,6 @@ const sendKafkaMessage = ({ userId, adId }) => {
         if (err) {
           return reject(err);
         }
-        console.log(data);
         return resolve(data);
       });
     });
@@ -34,7 +33,8 @@ const toggleLove = (params) => {
         userId,
         adId
       }).then(() => {
-        return sendKafkaMessage(params);
+        // TODO: Produce the message after the activity is ready.
+        // return sendKafkaMessage(params);
       }).then(() => ({ action: 'INSERT' }));
     } else {
       return { action: 'DELETE' };
